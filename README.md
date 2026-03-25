@@ -1,150 +1,157 @@
-# 🖐️ Hand Tracking Using OpenCV & MediaPipe
+# 🖐️ Hand Gesture Detection using OpenCV & MediaPipe  
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=25&duration=3000&color=00F7FF&center=true&vCenter=true&width=700&lines=Real-Time+Hand+Tracking;OpenCV+%2B+MediaPipe;21+Landmark+Detection;Futuristic+Computer+Vision+Project+🚀" />
+  <img src="https://readme-typing-svg.herokuapp.com?size=26&duration=3000&color=00F7FF&center=true&vCenter=true&width=800&lines=Real-Time+Hand+Tracking+System;OpenCV+%2B+MediaPipe;21+Landmark+Detection;Build+Futuristic+Vision+Apps+🚀" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/OpenCV-4.13-green?style=for-the-badge&logo=opencv">
+  <img src="https://img.shields.io/badge/MediaPipe-0.10-orange?style=for-the-badge">
 </p>
 
 ---
 
 ## 🚀 Project Overview
 This project is a **real-time hand tracking system** built using **OpenCV** and **MediaPipe**.  
-It detects and visualizes **21 hand landmarks** including fingers and palm with high accuracy.
+It detects **21 hand landmarks** (fingers + palm) and visualizes them with high accuracy.
 
----
-
-## 🎯 Applications
-- 🤖 Computer Vision Projects  
-- ✋ Gesture Recognition Systems  
-- 📊 AI/ML Portfolio Projects  
-- 🕶️ AR/VR Interaction  
+💡 Designed for:
+- Computer Vision Projects  
+- Gesture Recognition  
+- AI/ML Portfolio  
+- AR/VR Interaction  
 
 ---
 
 ## ✨ Features
-- ✅ Real-time hand detection  
-- ✅ 21 landmark tracking  
-- ✅ Smooth skeleton visualization  
-- ✅ FPS counter  
-- ✅ Webcam + video support  
-- ✅ Pause (`P`) and Quit (`Q`)  
-- ✅ Prints landmark coordinates  
-
----
-
-## 🧠 How It Works
-- MediaPipe loads a **pre-trained hand tracking model**
-- OpenCV captures video frames
-- Each frame is processed:
-  - 🟢 Green dots → Landmarks  
-  - 🔵 Blue lines → Connections  
-  - 🟣 Magenta dot → Wrist  
-- FPS is calculated and displayed  
+- 🎯 Real-time hand detection  
+- 🧠 21 landmark tracking  
+- 🎨 Smooth skeleton visualization  
+- ⚡ FPS counter  
+- 🎥 Webcam + video support  
+- 🎮 Interactive base for gesture control  
 
 ---
 
 # 📸 Output Preview
 
-## 🔹 Hand Tracking (Normal Mode)
-![Hand Tracking](Assets/image1.png)
+## 🔹 Hand Tracking
+![Tracking](Assets/image1.png)
 
-👉 Stable detection with clear landmark connections  
+👉 Stable detection with accurate landmark mapping  
 
 ---
 
-## 🔹 High FPS Detection
-![High FPS](Assets/image2.png)
+## 🔹 High FPS Mode
+![FPS](Assets/image2.png)
 
-👉 Smooth tracking with better performance  
+👉 Smooth and high-performance tracking  
 
 ---
 
 ## 🔹 Minimal Detection Mode
 ![Minimal](Assets/image3.png)
 
-👉 Only essential tracking (wrist-focused)  
+👉 Focused wrist tracking  
 
 ---
 
-## 🔹 Low Light Performance
-![Low Light](Assets/image3.png)
+# 🎥 Demo
 
-👉 Shows performance drop in low lighting  
+👉 Click below to watch:
 
----
+[▶ Watch Demo Video](Assets/recoed1.mp4)
 
-# 🎥 Demo Video
-
-<video src="Assets/recoed1.mp4" controls width="600"></video>
-
-👉 Demonstrates real-time tracking  
+💡 *Tip: Convert video → GIF for best GitHub preview*
 
 ---
 
-## ⚙️ Installation & Setup
+# ⚙️ Installation & Setup
 
-### 1️⃣ Clone Repository
+## 1️⃣ Clone Repository
 ```bash
 git clone https://github.com/Pawankumar16122114/Hand_Gesture_Using_OpenCV.git
 cd Hand_Gesture_Using_OpenCV
+```
 2️⃣ Create Virtual Environment
+```bash
 python -m venv .venv
+```
+Activate Environment
 
-Activate:
+Windows
 
-.venv\Scripts\activate   # Windows
+```bash
+env\Scripts\activate
+```
+
+Linux / Mac
+```bash
+source .venv/bin/activate
+```
 3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
-▶️ How to Run
-🎥 Webcam Mode
+```
+---
+
+## ▶️ Run the Project
+
+### 🎥 Webcam Mode
+```bash
 python app.py
+```
 📁 Video Mode
+```bash
 python "Hand Tracking from Media .py"
-📦 Requirements
-Python 3.7+ (Recommended: 3.11)
-OpenCV 4.13+
-MediaPipe 0.10.33+
+```
+🧠 How It Works
+MediaPipe uses a pre-trained ML model<br>
+Detects 21 keypoints:<br>
+OpenCV renders:<br>
+🟢 Landmarks<br>
+🔵 Connections<br>
+🟣 Wrist<br>
 
-Install manually:
+FPS displayed in real-time<br>
+⚡ Performance<br>
+🌞 Good Light → ⭐⭐⭐⭐⭐<br>
+🌤 Medium Light → ⭐⭐⭐⭐<br>
+🌙 Low Light → ⭐⭐⭐<br>
 
-pip install opencv-python mediapipe
-🛠️ Project Structure
-📦 Hand_Gesture_Using_OpenCV
- ┣ 📜 app.py
- ┣ 📜 Hand Tracking from Media.py
- ┣ 📜 requirements.txt
- ┣ 📂 Assets
- ┃ ┣ image1.png
- ┃ ┣ image2.png
- ┃ ┣ image3.png
- ┃ ┗ recoed1.mp4
- ┗ 📜 README.md
-⚡ Performance
-Condition	Accuracy
-Good Lighting	⭐⭐⭐⭐⭐
-Medium Lighting	⭐⭐⭐⭐
-Low Lighting	⭐⭐⭐
-🧪 Troubleshooting
 
-❌ Only one dot showing?
-✔ Ensure all 21 landmarks are drawn
+🧪 Troubleshooting:<br>
+❌ Only one dot showing?<br>
+✔ Ensure loop draws all 21 landmarks<br>
 
-❌ Camera not opening?
-✔ Check webcam permissions
+❌ Camera not opening?<br>
+✔ Check webcam permissions<br>
 
-❌ Low accuracy?
-✔ Improve lighting
+❌ Low accuracy?<br>
+✔ Improve lighting<br>
 
-💡 Future Enhancements
-✋ Gesture recognition
-🖱️ Hand-controlled mouse
-🎮 Game control using gestures
-🤖 Sign language detection
-⭐ Support
 
-If you like this project:
-👉 Star ⭐ the repo
-👉 Share 🔁
+💡 Future Enhancements:<br>
+✋ Gesture Recognition (Thumbs up, Swipe)<br>
+🖱 Hand-controlled Mouse<br>
+🎮 Game Controls<br>
+🤖 Sign Language Detection<br>
+
+
+🏆 Why This Project Stands Out:<br>
+🔥 Real-time Computer Vision<br>
+🔥 Industry tools (MediaPipe)<br>
+🔥 Extendable to AI systems<br>
+🔥 Strong portfolio project<br>
+
 
 👨‍💻 Author
+Pawankumar Bukka
 
-Pawankumar Bukka(https://github.com/Pawankumar16122114)
+⭐ Support:
+If you like this project:<br>
+
+👉 Star ⭐ the repo<br>
+👉 Share 🔁
+<p align="center"> 🚀 Built with Passion | Computer Vision Project </p>
